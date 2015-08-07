@@ -380,6 +380,7 @@ int main(int argc, char *argv[])
 		save = save_systemconfig(err);
 	}
 	LOG("exit.");
+	delete screen;
 	done();
 	if (save != LS_OK) {
 		ht_printf("save_systemconfig(): error: %y\n", &err);
